@@ -1,0 +1,14 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "homemadeapp.cbvxlnc11qvh.us-east-1.rds.amazonaws.com",
+      "port": 5432,
+      "driver": "PostgreSQL",
+      "name": "aws RDS",
+      "database": "homemadeApp",
+      "username": "homemadeApp",
+      "password": "homemadeApp"
+    }
+  ]
+}
