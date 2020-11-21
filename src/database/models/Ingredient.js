@@ -17,7 +17,10 @@ class Ingredient extends Model{
       measure: DataTypes.STRING,
       observation:DataTypes.STRING,
   },{sequelize})
-}
+  }
+  static associate(models) {
+    this.belongsTo(models.Recipe, {foreignKey:'id', as: 'recipe'})
+  }
 }
 
 module.exports = Ingredient;

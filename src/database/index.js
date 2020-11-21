@@ -7,4 +7,6 @@ const connection = new Sequelize(dbConfig)
 Recipe.init(connection)
 Ingredient.init(connection)
 
+Ingredient.associate(connection.models)
+
 module.exports = connection
